@@ -1,0 +1,470 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    color: #37474f;
+    
+}
+
+/*encabezado*/
+header {
+    height: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+/*lista de navegación del header*/
+.header-ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin: 0 10rem;
+}
+
+.header-li {
+    margin: 1rem;
+    font-family: 'Space Mono', monospace;
+}
+
+a{
+    text-decoration: none;
+    padding: 0.8rem 0.8rem;
+    border-radius: 50px;
+}
+
+a:focus{
+    outline-style: none;
+    box-shadow: 0px 0px 2px 3px rgba(26, 106, 98, 0.2);
+}
+
+
+.header-a {
+    color: #0f1a26;
+}
+
+.header-a:hover{
+    color:#1a6a62;
+    font-weight: 700;
+    
+}
+
+/*todos los buttons de la página están definidos aquí (excepto una propiedad del botón enviar que se encuentra en la sección de contacto)*/
+.button {
+    background-color: #1a6a62;
+    color: white;
+    border-style: none;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-family: 'Space Mono', monospace;
+}
+
+.button:hover{
+    background-color: #279186;
+}
+
+/*nombre y breve descripción*/
+.presentation {
+    display: flex;
+    justify-content:center;
+    height:650px;
+    padding: 4rem 0 0 0;
+    width: 100%
+}
+
+.left-bar {
+    margin: 4rem 1rem 4rem 5rem;
+}
+
+p {
+    font-family: 'Space Mono', monospace;
+}
+
+.left-bar-text {    
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 8rem 0rem 0rem 0rem
+}
+
+.left-bar-name {
+    font-family: 'BioRhyme', serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #1a6a62;
+    margin: 0;
+}
+
+.left-bar-description {
+    font-size: 1.2rem;
+    margin: 0rem 0 1.5rem 0;
+}
+
+/*imagen ilustrativa de la presentación*/
+.cover-img {
+    width: 600px;
+    height: 600px;
+    margin: 0 1rem;
+}
+
+/*sección Mis Conocimientos*/
+.skills {
+    background-color: #bfced91c;
+    margin-top: 0;
+    padding-bottom: 8rem;
+    width: 100%;
+}
+
+h2 {
+    font-family: 'BioRhyme', serif;
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 8rem 0 0 0;
+    text-align: center;
+
+}
+
+.skills-title {    
+    margin-bottom: 1rem;
+}
+
+.skills-description {
+    font-size: 1.2rem;
+    margin: 0rem 0 1.5rem 0;
+    text-align: center;
+}
+
+.logos-it {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 62rem;
+    margin: auto;
+    justify-content: center;
+    flex-shrink:inherit
+}
+
+.logo-box {
+    width: 17rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border: 1px solid #c6d4df;
+}
+
+.logo-box:hover {
+    border-color: #fc363b;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    
+}
+
+/*sección cita*/
+.quote-box {
+    background-color: #1a6a62;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+}
+
+.ghopper-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+
+.quote {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 4rem 21rem 5rem 21rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.name-quote {
+    font-style: normal;
+    font-family: 'BioRhyme', serif;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/*sección Proyectos*/
+.projects-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content:center;
+    align-self: center;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.projects-box {
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+    margin: 0.8rem 0.8rem;
+    border: 1px solid #c6d4df;
+    border-radius: 20px;
+    padding: 5%;
+    box-sizing: border-box;
+
+    }
+
+.projects-box:hover {
+    border-color: #1a6a62;
+    box-shadow:
+        1px 1px #1a6a62,
+        2px 2px #1a6a62,
+        3px 3px #1a6a62;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+.projects-text {
+    text-align: center;
+    margin:0
+}
+
+.img-projects {
+    width: 250px;
+    height: 250px;
+    min-width: 0;
+}
+
+/*sección Contacto*/
+.contact {
+    background-color: #bfced91c;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-container {
+    display: flex;
+    width: 70rem;
+    margin: 4rem;
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    border: 1px solid #c6d4df;
+    padding-top: 1.5rem;
+}
+
+/*contenedor izquierdo - links a redes sociales*/
+.left-side {
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem;
+}
+
+.contact-title {
+    padding: 0;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact-text {
+    margin-left: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.rrss {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 2rem;
+}
+
+.rrss-inline {
+    width: auto;
+    display: flex;
+    align-items: baseline;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+}
+
+/*contenedor derecho - formulario de contacto*/
+.right-side {
+    width: 35rem;
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    width: 35rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+
+label {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+}
+
+input, textarea {
+    background-color: #bfced91c;
+    border-style: none;
+    padding: 0.5rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+}
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-last-name {
+    width: 15rem;
+}
+.name{
+    width: 11rem;
+}
+
+.last-name  {
+    width: 13rem;
+}
+
+.email, .message {
+    width: 28rem;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'BioRhyme', serif;
+    font-size: 17px;    
+}
+
+input:focus, textarea:focus {
+    outline-style: none;
+    box-shadow: 0px 0px 2px 3px rgba(252, 54, 59, 0.2);
+}
+
+/*propiedad específica del botón enviar*/
+.send-btn {
+    margin-bottom: 1.5rem;
+}
+
+button:focus{
+    outline-style: none;
+    box-shadow: 0px 0px 2px 3px rgba(26, 106, 98, 0.2);
+}
+
+.icon-rrss {
+    color: #1a6a62;
+    margin: 0 0.5rem 0 1.2rem;
+    padding: 0.8rem;
+}
+
+.icon-rrss:hover{
+    color: #ffffff;
+    background-color: #1a6a62;
+    padding: 0.8rem;
+    border-radius: 20px;
+}
+
+/*pie de página*/
+footer {
+    background-color: #1a6a62;
+    height: 18rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.footer-nav {
+    height: fit-content;
+}
+.footer-ul {
+    list-style-type:none;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0 10rem;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-il {
+    margin: 5rem 1rem 2rem 1rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.footer-a {
+    color: #ffffff;
+}
+
+.footer-a:hover{
+    font-weight: 700;
+}
+
+.footer-rrss {
+    text-align: center;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+.icon-footer {
+    color: #1a6a62;
+    background-color: #ffffff;
+    padding: 0.8rem;
+    border-radius: 20px;
+    margin: 0.3rem
+}
+
+.icon-footer:hover{
+    color: #ffffff;
+    background-color: #1a6a62;
+    padding: 0.8rem;
+    border: solid 1px #ffffff;
+    border-radius: 20px;
+}
+
+.footer-text {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 2rem;
+    text-align: center;
+}
+
