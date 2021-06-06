@@ -9,16 +9,22 @@ main{
     margin: 0;
     padding: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 body {
     color: #37474f;
-    
 }
 
+section {
+    width: 100%;
+    align-self: center;
+}
 /*encabezado*/
 header {
-    height: 5rem;
+    height: 6rem;
     box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
     width: 100%;
     justify-content: flex-end;
@@ -33,8 +39,8 @@ header {
     list-style-type:none;
     display: flex;
     justify-content: flex-end;
-    align-items: baseline;
-    margin: 0 10rem;
+    align-items: center;
+    margin: 1rem 10rem;
 }
 
 .header-li {
@@ -42,15 +48,15 @@ header {
     font-family: 'Space Mono', monospace;
 }
 
-a{
+a {
     text-decoration: none;
     padding: 0.8rem 0.8rem;
     border-radius: 50px;
 }
 
-a:focus{
+a:focus {
     outline-style: none;
-    box-shadow: 0px 0px 2px 3px rgba(26, 106, 98, 0.2);
+    box-shadow: 0px 0px 2px 3px rgba(26, 106, 98, 0.5);
 }
 
 
@@ -77,6 +83,8 @@ a:focus{
 
 .button:hover{
     background-color: #279186;
+    color: #ffffff;
+    font-weight: 400;
 }
 
 /*nombre y breve descripción*/
@@ -225,25 +233,26 @@ h2 {
 /*sección Proyectos*/
 .projects-links {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     margin: auto;
-    justify-content:center;
-    align-self: center;
-    padding-bottom: 2rem;
-    width: 100%;
+    margin-bottom: 2rem;
+    width: 80%;
+    font-size: 17px;
 }
 
+
 .projects-box {
-    /*display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;*/
-    margin: 0.8rem 0.8rem;
+    justify-content: center;
+    margin: 1rem 0.8rem;
     border: 1px solid #c6d4df;
     border-radius: 20px;
     padding: 5%;
     box-sizing: border-box;
-
+    width: 30%;
+    flex-grow: 0;
     }
 
 .projects-box:hover {
@@ -258,13 +267,24 @@ h2 {
 
 .projects-text {
     text-align: center;
-    margin:0
+    margin-top:1rem;
+    box-sizing: content-box;
+    font-size: 17px;
 }
 
 .img-projects {
-    width: 250px;
-    height: 250px;
+    width: 90%;
+    height: 90%;
     min-width: 0;
+}
+
+.movie-night {
+    margin-top: 3em;
+    min-height: 95%;
+}
+
+.movie-night-text{
+    margin-bottom: 3em;
 }
 
 /*sección Contacto*/
@@ -272,26 +292,27 @@ h2 {
     background-color: #bfced91c;
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .contact-container {
     display: flex;
-    width: 70rem;
-    margin: 4rem;
+    justify-content: center;
+    width: 80%;
+    margin: 4em;
     background-color: #ffffff;
     justify-content: space-evenly;
     border-radius: 20px;
     border: 1px solid #c6d4df;
-    padding-top: 1.5rem;
+    padding: 1.5rem;
 }
 
 /*contenedor izquierdo - links a redes sociales*/
-.left-side {
-    width: 35rem;
+.left-side-contact {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 0 3rem;
+    margin: 0 1.5rem;
+    padding-left: 4%;
 }
 
 .contact-title {
@@ -305,7 +326,7 @@ h2 {
     font-size: 1.2rem;
 }
 
-.rrss {
+.rrss-container {
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -316,23 +337,45 @@ h2 {
     width: auto;
     display: flex;
     align-items: baseline;
+    justify-content: left;
     margin-left: 1rem;
     font-size: 1.1rem;
 }
 
+.a-rrss {
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 0
+}
+
+.icon-rrss {
+    color: #1a6a62;
+    margin: 0;
+    padding: 0.8rem;
+}
+
+.icon-rrss:hover{
+    color: #ffffff;
+    background-color: #1a6a62;
+    padding: 0.8rem;
+    border-radius: 20px;
+}
+
 /*contenedor derecho - formulario de contacto*/
-.right-side {
-    width: 35rem;
+.right-side-contact {
+    width: 50%;
     display: flex;
     flex-direction: row;
+    margin-left: 1.5rem;
+    padding-left: 5%;
 }
 
 form {
-    width: 35rem;
-    margin-right: 3rem;
+    width: 90%;
+    margin-right: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
 
 }
 
@@ -350,24 +393,22 @@ input, textarea {
     border-radius: 20px;
     margin-bottom: 1.5rem;
 }
+
 .form-input {
     display: flex;
     flex-direction: column;
 }
 
-.name-last-name {
-    width: 15rem;
-}
-.name{
-    width: 11rem;
+.last-name {
+    width: 45%;
 }
 
-.last-name  {
-    width: 13rem;
+.name{
+    width: 48%;
 }
 
 .email, .message {
-    width: 28rem;
+    width: 98%;
 }
 
 input::placeholder, textarea::placeholder {
@@ -381,27 +422,16 @@ input:focus, textarea:focus {
 }
 
 /*propiedad específica del botón enviar*/
-.send-btn {
+.send-btn-button {
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
 
 button:focus{
     outline-style: none;
-    box-shadow: 0px 0px 2px 3px rgba(26, 106, 98, 0.2);
+    box-shadow: 0px 0px 2px 3px rgba(26, 106, 98, 0.5);
 }
 
-.icon-rrss {
-    color: #1a6a62;
-    margin: 0 0.5rem 0 1.2rem;
-    padding: 0.8rem;
-}
-
-.icon-rrss:hover{
-    color: #ffffff;
-    background-color: #1a6a62;
-    padding: 0.8rem;
-    border-radius: 20px;
-}
 
 /*pie de página*/
 footer {
@@ -415,13 +445,14 @@ footer {
 
 .footer-nav {
     height: fit-content;
+    box-sizing: border-box;
 }
+
 .footer-ul {
     list-style-type:none;
     display: flex;
     justify-content: center;
     align-items: baseline;
-    margin: 0 10rem;
     justify-content: center;
     padding: 0;
 }
@@ -433,6 +464,11 @@ footer {
 
 .footer-a {
     color: #ffffff;
+}
+
+.footer-a:focus{
+    outline-style: none;
+    box-shadow: 0px 0px 2px 3px rgba(253, 253, 253, 0.753);
 }
 
 .footer-a:hover{
@@ -468,3 +504,147 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-width:1000px) {
+    header {
+        display: none;
+    }
+
+    .presentation {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .left-bar {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center        
+    }
+    
+    .right-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px
+    }
+    .cover-img {
+        width: 500px;
+        height: 500px;
+        margin: 0
+    }
+
+    /*sección Mis Conocimientos*/
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+    
+      
+    .logos-it {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0
+    }
+    
+    /*sección cita*/
+    .quote {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 4rem 4rem 5rem 4rem;
+        font-family: 'Space Mono', monospace;
+    }
+    
+    .projects-links {
+        width: 90%;
+        margin: auto;
+        justify-content:center;
+        align-content: center;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    /*sección Mis conocimientos*/
+
+    .logos-it {
+        width: 95%;
+    }
+    /*sección Mis Proyectos*/
+
+    .projects-links {
+        width: 100%;
+    }
+
+    .projects-box {
+        flex-basis: 45%;
+    }
+
+    /*sección Contacto*/
+
+    .contact {
+        background-color: #ffffff;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        border: none;
+        padding: 0;
+    }
+    
+    .left-side-contact {
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .rrss-container {
+        margin: 0;
+        justify-content: left;
+        flex-wrap: wrap;
+        align-items: space-around;
+        flex-direction: row;
+        box-sizing: border-box;
+    }
+
+    .rrss-inline {
+        align-items: left;
+        width: 45%;
+    }
+    .rrss-inline p{
+        padding: 0 10px 0 5px;
+        margin: 0;
+    }
+
+
+
+    .right-side-contact {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+
+   .form {
+        margin:0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .contact-title {
+        width: fit-content;
+    }
+
+
+}

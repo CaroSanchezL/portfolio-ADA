@@ -24,7 +24,7 @@
                 <li class="header-li"><a href="#hola" class="header-a">HOLA</a></li>
                 <li class="header-li"><a href="#conocimientos" class="header-a">CONOCIMIENTOS</a></li>
                 <li class="header-li"><a href="#proyectos" class="header-a">PROYECTOS</a></li>
-                <li class="header-li"><a href="#contacto" class="header-a button" >CONTACTO</a></li>
+                <li class="header-li"><a href="#contacto" class="header-a button">CONTACTO</a></li>
             </ul>
             </nav>
         </header>
@@ -130,8 +130,8 @@
                     </div>
 
                     <div class="projects-box">
-                        <img src="./Movie Night-cuate.svg" alt="pareja mirando una película" class="img-projects" role="img">
-                        <p class="projects-text">Buscador de películas</p>
+                        <img src="./Movie Night-cuate.svg" alt="pareja mirando una película" class="img-projects movie-night" role="img">
+                        <p class="projects-text movie-night-text">Buscador de películas</p>
                     </div>
                 </div>
             </section>
@@ -139,65 +139,65 @@
             <!--información de contacto-->
             <section class="contact" id="contacto">
                 <div class="contact-container">
-                    <div class="left-side">
+                    <div class="left-side-contact">
                         <div class="contact-text">
                             <h2 class="contact-title">Contactame</h2>
                             <p class="contact-description">Estas son mis redes sociales</p>
                         </div>
 
                         <!--links a redes sociales-->
-                        <div class="rrss">
+                        <div class="rrss-container">
                             <div class="rrss-inline">
-                                <i class="fab fa-twitter fa-lg icon-rrss" role="link"></i>
-                                <p>@CaroSanchez</p>
+                                <a href="https://twitter.com/CaroSanchezLew" class="a-rrss"><i class="fab fa-twitter fa-lg icon-rrss" role="link"></i></a>
+                                <p>@CaroSanchezLew</p>
                             </div>   
 
                             <div class="rrss-inline">
-                                <i class="fab fa-github-alt fa-lg icon-rrss" role="link"></i>
+                                <a href="https://github.com/CaroSanchezL" class="a-rrss"><i class="fab fa-github-alt fa-lg icon-rrss" role="link"></i></a>
                                 <p>CaroSanchezL</p>
                             </div>
 
                             <div class="rrss-inline">
-                                <i class="fab fa-linkedin-in fa-lg icon-rrss" role="link"></i>
+                                <a href="https://ar.linkedin.com/in/carolina-sanchez-lew" class="a-rrss"><i class="fab fa-linkedin-in fa-lg icon-rrss" role="link"></i></a>
                                 <p>Carolina Sánchez</p>
                             </div>
 
                             <div class="rrss-inline">
-                                <i class="fas fa-envelope fa-lg icon-rrss" role="link"></i>
+                                <a href="mailto=carolsanlew@gmail.com" class="a-rrss"><i class="fas fa-envelope fa-lg icon-rrss" role="link"></i></a>
                                 <p>carolsanlew@gmail.com</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="right-side">
+                    <div class="right-side-contact">
                         <!--formulario de contacto-->
                         <div class="form">
                             <h2 class="contact-title">Escribime</h2>
 
-                            <form>
-                                <div class="form-input name-last-name">
+                            <form enctype="text/plain" name="contact-data">
+                                <div class="form-input name">
                                 <label for="nombre">Nombre*</label>
-                                <input type="text" placeholder="p. ej.: Ada" id="nombre" class="name">
+                                <input type="text" placeholder="p. ej.: Ada" id="nombre" class="input-name">
                                 </div>
                                 
                                 <div class="form-input last-name">
                                     <label for="apellido">Apellido*</label>
-                                    <input type="text" placeholder="p. ej.: Lovelace" id="apellido" class="last-name">
+                                    <input type="text" placeholder="p. ej.: Lovelace" id="apellido" class="input-last-name">
                                 </div>
 
-                                <div class="form-input">
+                                <div class="form-input email">
                                     <label for="email">Email*</label>
-                                    <input type="email" placeholder="p. ej.: ada.lovelace@gmail.com" id="email" class="email">
+                                    <input type="email" placeholder="p. ej.: ada.lovelace@gmail.com" id="email" class="input-email">
                                 </div>
 
-                                <div class="form-input">
+                                <div class="form-input message">
                                     <label for="mensaje">Mensaje*</label>
-                                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba un mensaje aquí" class="message"></textarea>
+                                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba un mensaje aquí" class="input-message"></textarea>
                                 </div>
                             </form>
 
                             <div class="send-btn">
-                                <button type="submit" class="button">Enviar</button>
+                                <button type="submit" class="button send-btn-button">Enviar</button>
                             </div>
                         </div>                        
                     </div>
