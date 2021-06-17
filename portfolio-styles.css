@@ -1,11 +1,8 @@
-html, body {
+body {
     margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
 }
 
-main{
+main {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -21,6 +18,7 @@ body {
 section {
     width: 100%;
     align-self: center;
+    padding-top: 4rem;
 }
 
 a {
@@ -143,7 +141,7 @@ h2 {
     font-family: 'BioRhyme', serif;
     font-size: 3rem;
     font-weight: 800;
-    padding: 8rem 0 0 0;
+    padding: 3rem 0 0 0;
     text-align: center;
 
 }
@@ -156,6 +154,7 @@ h2 {
     font-size: 1.2rem;
     margin: 0rem 0 1.5rem 0;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .skills-logos {
@@ -240,6 +239,7 @@ h2 {
     margin-bottom: 2rem;
     width: 80%;
     font-size: 17px;
+    justify-content: center;
 }
 
 
@@ -301,7 +301,7 @@ h2 {
 .contact-container {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 75%;
     margin: 4em;
     background-color: #ffffff;
     justify-content: space-evenly;
@@ -320,7 +320,7 @@ h2 {
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 0 1.5rem;
+    margin: 0 1.5rem 0 0;
     padding-left: 4%;
 }
 
@@ -518,7 +518,11 @@ footer {
     text-align: center;
 }
 
+/*-----------------------------------------------------------MEDIA QUERIES--------------------------------------------------------------*/
+/*-------------------------------------------------------BREAKPOINT 1000px--------------------------------------------------------------*/
+
 @media screen and (max-width:1000px) {
+
 /*------------------------------------------------------------NAV SUPERIOR--------------------------------------------------------------*/
     .top-nav {
         display: none;
@@ -550,14 +554,14 @@ footer {
         height: 400px
     }
 
-/*---------------------------------------------------------IMAGEN PRESENTACIÓN---------------------------------------------------------*/
+    /*---------------------------------------------------------IMAGEN PRESENTACIÓN------------------------------------------------------*/
     .presentation-img {
         width: 500px;
         height: 500px;
         margin: 0
     }
 
-/*---------------------------------------------------------MIS CONOCIMIENTOS------------------------------------------------------------*/
+    /*--------------------------------------------------------MIS CONOCIMIENTOS---------------------------------------------------------*/
     .skills {
         display: flex;
         flex-direction: column;
@@ -576,7 +580,7 @@ footer {
         margin: 0
     }
     
-/*-------------------------------------------------------------------CITA---------------------------------------------------------------*/
+    /*--------------------------------------------------------------CITA---------------------------------------------------------------*/
     .quote-text {
         font-size: 1.3rem;
         text-align: center;
@@ -584,7 +588,7 @@ footer {
         font-family: 'Space Mono', monospace;
     }
     
-/*--------------------------------------------------------------MIS PROYECTOS-----------------------------------------------------------*/
+    /*----------------------------------------------------------MIS PROYECTOS-----------------------------------------------------------*/
     .projects-links {
         width: 90%;
         margin: auto;
@@ -592,16 +596,23 @@ footer {
         align-content: center;
     }
 
+    /*-----------------------------------------------------------CONTACTO---------------------------------------------------------------*/
+    .contact-container {
+        transition: initial;
+    }
 }
 
+
+/*-------------------------------------------------------BREAKPOINT 900px---------------------------------------------------------------*/
+
 @media screen and (max-width:900px) {
-/*---------------------------------------------------------MIS CONOCIMIENTOS------------------------------------------------------------*/
+    /*-----------------------------------------------------MIS CONOCIMIENTOS------------------------------------------------------------*/
 
     .skills-logos {
         width: 95%;
     }
 
-/*--------------------------------------------------------------MIS PROYECTOS-----------------------------------------------------------*/
+    /*------------------------------------------------------MIS PROYECTOS---------------------------------------------------------------*/
 
     .projects-links {
         width: 100%;
@@ -611,7 +622,7 @@ footer {
         flex-basis: 45%;
     }
 
-/*----------------------------------------------------------------CONTACTO--------------------------------------------------------------*/
+    /*-----------------------------------------------------------CONTACTO---------------------------------------------------------------*/
 
     .contact {
         background-color: #ffffff;
@@ -621,6 +632,7 @@ footer {
         flex-direction: column;
         border: none;
         padding: 0;
+        transition: initial;
     }
     
     .contact-left-bar {
@@ -663,6 +675,26 @@ footer {
     .contact-title {
         width: fit-content;
     }
- /*prox breakpoint 550px*/
 
 }
+
+@media screen and (max-width:700px) {
+
+    section {
+        width: 100%;
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+    h2 {
+        padding: 0;
+    }
+
+    .contact-container {
+        margin-top: 0;
+    }
+}
+ /*TO-DO: márgenes, prox breakpoint 700: sacar nav footer
+ 550px: achicar letra de h1 y 2, mis proyectos pasa de dos columnas a una*/
