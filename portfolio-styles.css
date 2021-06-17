@@ -32,6 +32,19 @@ a:focus {
     box-shadow: 0px 0px 2px 3px rgba(26, 106, 98, 0.5);
 }
 
+p {
+    font-family: 'Space Mono', monospace;
+}
+
+h2 {
+    font-family: 'BioRhyme', serif;
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 3rem 0 0 0;
+    text-align: center;
+
+}
+
 /*-----------------------------------------------------------NAV SUPERIOR---------------------------------------------------------------*/
 .top-nav {
     height: 6rem;
@@ -97,10 +110,6 @@ a:focus {
 
 .presentation-left-bar {
     margin: 4rem 1rem 4rem 5rem;
-}
-
-p {
-    font-family: 'Space Mono', monospace;
 }
 
 .presentation-text {    
@@ -232,14 +241,14 @@ h2 {
 }
 
 /*------------------------------------------------------------MIS PROYECTOS-------------------------------------------------------------*/
-.projects-links {
+.projects-links-container {
     display: flex;
     flex-wrap:wrap;
     margin: auto;
     margin-bottom: 2rem;
     width: 80%;
     font-size: 17px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 
@@ -282,15 +291,6 @@ h2 {
     min-width: 0;
 }
 
-.movie-night {
-    margin-top: 3em;
-    min-height: 95%;
-}
-
-.movie-night-text{
-    margin-bottom: 3em;
-}
-
 /*----------------------------------------------------------------CONTACTO--------------------------------------------------------------*/
 .contact {
     background-color: #bfced91c;
@@ -321,7 +321,6 @@ h2 {
     display: flex;
     flex-direction: column;
     margin: 0 1.5rem 0 0;
-    padding-left: 4%;
 }
 
 .contact-title {
@@ -589,7 +588,7 @@ footer {
     }
     
     /*----------------------------------------------------------MIS PROYECTOS-----------------------------------------------------------*/
-    .projects-links {
+    .projects-links-container {
         width: 90%;
         margin: auto;
         justify-content:center;
@@ -614,7 +613,7 @@ footer {
 
     /*------------------------------------------------------MIS PROYECTOS---------------------------------------------------------------*/
 
-    .projects-links {
+    .projects-links-container {
         width: 100%;
     }
 
@@ -678,14 +677,13 @@ footer {
 
 }
 
+/*-------------------------------------------------------BREAKPOINT 700px---------------------------------------------------------------*/
+
 @media screen and (max-width:700px) {
+
 
     section {
         width: 100%;
-    }
-
-    .footer-nav {
-        display: none;
     }
 
     h2 {
@@ -695,6 +693,73 @@ footer {
     .contact-container {
         margin-top: 0;
     }
+
+    .footer-ul {
+        display: none;
+    }
+
+    footer {
+        padding-top: 4rem;
+    }
+    
 }
- /*TO-DO: márgenes, prox breakpoint 700: sacar nav footer
+
+/*-------------------------------------------------------BREAKPOINT 600px---------------------------------------------------------------*/
+@media screen and (max-width:600px) {
+.rrss-container {
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+/*-------------------------------------------------------BREAKPOINT 550px---------------------------------------------------------------*/
+@media screen and (max-width:550px) {
+
+.presentation-name {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.presentation-img {
+    width: 100%;
+}
+
+.projects-links-container {
+    width: 100%;
+}
+
+.projects-box {
+    flex-basis: 80%;
+}
+
+}
+
+@media screen and (max-width:350px) {
+   
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .rrss-link-description p{
+        display: none;
+    }
+    
+    .rrss-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .rrss-link-description {
+        margin: 0;
+    }
+
+    
+}
+
+
+ /*TO-DO: márgenes, prox breakpoint 600: acomodar rrss porque rebalsan los divs
  550px: achicar letra de h1 y 2, mis proyectos pasa de dos columnas a una*/
