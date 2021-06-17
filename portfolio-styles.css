@@ -22,8 +22,20 @@ section {
     width: 100%;
     align-self: center;
 }
-/*encabezado*/
-header {
+
+a {
+    text-decoration: none;
+    padding: 0.8rem 0.8rem;
+    border-radius: 50px;
+}
+
+a:focus {
+    outline-style: dashed;
+    box-shadow: 0px 0px 2px 3px rgba(26, 106, 98, 0.5);
+}
+
+/*------------------------------------------------encabezado----------------------------------------------------*/
+.top-nav {
     height: 6rem;
     box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
     width: 100%;
@@ -34,8 +46,8 @@ header {
     z-index: 1;
 }
 
-/*lista de navegación del header*/
-.header-ul{
+/*-------------------------------------lista de navegación del header-------------------------------------------*/
+.top-nav-ul{
     list-style-type:none;
     display: flex;
     justify-content: flex-end;
@@ -43,35 +55,24 @@ header {
     margin: 1rem 10rem;
 }
 
-.header-li {
+.top-nav-li {
     margin: 1rem;
     font-family: 'Space Mono', monospace;
 }
 
-a {
-    text-decoration: none;
-    padding: 0.8rem 0.8rem;
-    border-radius: 50px;
-}
 
-a:focus {
-    outline-style: none;
-    box-shadow: 0px 0px 2px 3px rgba(26, 106, 98, 0.5);
-}
-
-
-.header-a {
+.top-nav-a {
     color: #0f1a26;
 }
 
-.header-a:hover{
+.top-nav-a:hover{
     color:#1a6a62;
     font-weight: 700;
     
 }
 
 /*todos los buttons de la página están definidos aquí (excepto una propiedad del botón enviar que se encuentra en la sección de contacto)*/
-.button {
+.call-to-action {
     background-color: #1a6a62;
     color: white;
     border-style: none;
@@ -81,7 +82,7 @@ a:focus {
     font-family: 'Space Mono', monospace;
 }
 
-.button:hover{
+.call-to-action:hover{
     background-color: #279186;
     color: #ffffff;
     font-weight: 400;
@@ -253,8 +254,10 @@ h2 {
     box-sizing: border-box;
     width: 30%;
     flex-grow: 0;
+    color: #0f1a26;
     }
-
+    
+    
 .projects-box:hover {
     border-color: #1a6a62;
     box-shadow:
@@ -417,18 +420,18 @@ input::placeholder, textarea::placeholder {
 }
 
 input:focus, textarea:focus {
-    outline-style: none;
+    outline-style: dashed;
     box-shadow: 0px 0px 2px 3px rgba(252, 54, 59, 0.2);
 }
 
 /*propiedad específica del botón enviar*/
-.send-btn-button {
+.send-button {
     margin-bottom: 1.5rem;
     cursor: pointer;
 }
 
 button:focus{
-    outline-style: none;
+    outline-style: dashed;
     box-shadow: 0px 0px 2px 3px rgba(26, 106, 98, 0.5);
 }
 
@@ -467,7 +470,7 @@ footer {
 }
 
 .footer-a:focus{
-    outline-style: none;
+    outline-style: dashed;
     box-shadow: 0px 0px 2px 3px rgba(253, 253, 253, 0.753);
 }
 
@@ -645,6 +648,6 @@ footer {
     .contact-title {
         width: fit-content;
     }
-
+ /*prox breakpoint 550px*/
 
 }
