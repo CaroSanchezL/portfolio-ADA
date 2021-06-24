@@ -1,5 +1,7 @@
+/*----------------------------------------------------------------GENERALES-------------------------------------------------------------*/
 body {
     margin: 0;
+    color: #37474f;
 }
 
 main {
@@ -11,9 +13,6 @@ main {
     align-items: center;
 }
 
-body {
-    color: #37474f;
-}
 
 section {
     width: 100%;
@@ -146,15 +145,6 @@ h2 {
     width: 100%;
 }
 
-h2 {
-    font-family: 'BioRhyme', serif;
-    font-size: 3rem;
-    font-weight: 800;
-    padding: 3rem 0 0 0;
-    text-align: center;
-
-}
-
 .skills-title {    
     margin-bottom: 1rem;
 }
@@ -241,6 +231,12 @@ h2 {
 }
 
 /*------------------------------------------------------------MIS PROYECTOS-------------------------------------------------------------*/
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .projects-links-container {
     display: flex;
     flex-wrap:wrap;
@@ -248,7 +244,6 @@ h2 {
     margin-bottom: 2rem;
     width: 80%;
     font-size: 17px;
-    justify-content: flex-start;
 }
 
 
@@ -257,7 +252,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0.8rem;
+    margin: 1.6% 1.6%;
     border: 1px solid #c6d4df;
     border-radius: 20px;
     padding: 5%;
@@ -320,7 +315,7 @@ h2 {
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 0 1.5rem 0 0;
+    margin: 0 1.5rem 0 1.5rem;
 }
 
 .contact-title {
@@ -339,6 +334,7 @@ h2 {
     flex-direction: column;
     align-items: baseline;
     margin-top: 2rem;
+    list-style-type: none;
 }
 
 .rrss-link-description {
@@ -351,22 +347,30 @@ h2 {
 }
 
 .a-rrss {
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    color: #37474f;
     text-decoration: none;
-    border-radius: 50px;
-    padding: 0
+    border-radius: 200px;
+    padding: 5px 10px;
 }
 
 .icon-rrss {
     color: #1a6a62;
-    margin: 0;
+    margin: 0 4px 0 0;
     padding: 0.8rem;
+    border-radius: 50%;
 }
 
-.icon-rrss:hover{
+.a-rrss:hover {
+    color: #1a6a62;
+}
+
+.a-rrss:hover > i {
     color: #ffffff;
-    background-color: #1a6a62;
-    padding: 0.8rem;
-    border-radius: 20px;
+    background-color: #1a6a62 ;
 }
 
 /*------------------------------------------------CONTENEDOR DERECHO - FORMULARIO CONTACTO----------------------------------------------*/
@@ -448,7 +452,7 @@ footer {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
 /*------------------------------------------------------------NAV INFERIOR--------------------------------------------------------------*/
@@ -487,40 +491,39 @@ footer {
 
 /*-------------------------------------------------------LINKS RRSS FOOTER--------------------------------------------------------------*/
 .footer-rrss {
-    text-align: center;
-    margin-top: 0;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
+    list-style-type: none;
 }
 
 .icon-footer {
     color: #1a6a62;
     background-color: #ffffff;
     padding: 0.8rem;
-    border-radius: 20px;
-    margin: 0.3rem
+    border-radius: 50%;
+    margin: 0.3rem;
+    border: solid 1px #1a6a62;
 }
 
 .icon-footer:hover{
     color: #ffffff;
     background-color: #1a6a62;
-    padding: 0.8rem;
-    border: solid 1px #ffffff;
-    border-radius: 20px;
+    border-color: #ffffff;
 }
 
 /*--------------------------------------------------------------INFO DEV----------------------------------------------------------------*/
 .footer-text {
     text-align: center;
     color: #ffffff;
-    margin-top: 2rem;
-    text-align: center;
+    margin-top: 1rem;
 }
 
 /*-----------------------------------------------------------MEDIA QUERIES--------------------------------------------------------------*/
-/*-------------------------------------------------------BREAKPOINT 1000px--------------------------------------------------------------*/
+/*-------------------------------------------------------BREAKPOINT 1175px--------------------------------------------------------------*/
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1175px) {
 
 /*------------------------------------------------------------NAV SUPERIOR--------------------------------------------------------------*/
     .top-nav {
@@ -591,7 +594,7 @@ footer {
     .projects-links-container {
         width: 90%;
         margin: auto;
-        justify-content:center;
+        justify-content:flex-start;
         align-content: center;
     }
 
@@ -619,6 +622,7 @@ footer {
 
     .projects-box {
         flex-basis: 45%;
+        margin: 2.5%;
     }
 
     /*-----------------------------------------------------------CONTACTO---------------------------------------------------------------*/
@@ -681,6 +685,7 @@ footer {
 
 @media screen and (max-width:700px) {
 
+/*-------------------------------------------------------GENERALES---------------------------------------------------------------*/
 
     section {
         width: 100%;
@@ -690,9 +695,20 @@ footer {
         padding: 0;
     }
 
+/*-------------------------------------------------------CONTACTO---------------------------------------------------------------*/
+
     .contact-container {
         margin-top: 0;
     }
+
+    .rrss-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+
+/*-------------------------------------------------------PIE DE PÁGINA---------------------------------------------------------------*/
 
     .footer-ul {
         display: none;
@@ -703,54 +719,64 @@ footer {
     }
     
 }
-
 /*-------------------------------------------------------BREAKPOINT 600px---------------------------------------------------------------*/
+
 @media screen and (max-width:600px) {
-.rrss-container {
-    display: flex;
-    flex-direction: column;
-}
+
+/*---------------------------------------------------------------CONTACTO---------------------------------------------------------------*/
+
+    .rrss-container {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
 /*-------------------------------------------------------BREAKPOINT 550px---------------------------------------------------------------*/
+
 @media screen and (max-width:550px) {
 
-.presentation-name {
-    font-size: 3rem;
+/*----------------------------------------------------------GENERALES---------------------------------------------------------------*/
+
+    h2 {
+        font-size: 2rem;
+    }
+/*--------------------------------------------------------PRESENTACIÓN---------------------------------------------------------------*/
+
+    .presentation-name {
+        font-size: 3rem;
+    }
+
+    .presentation-img {
+        width: 100%;
+    }
+
+/*-------------------------------------------------------MIS PROYECTOS---------------------------------------------------------------*/
+
+    .projects-links-container {
+        width: 100%;
+    }
+
+    .projects-box {
+        flex-basis: 80%;
+    }
+
 }
 
-h2 {
-    font-size: 2rem;
-}
-
-.presentation-img {
-    width: 100%;
-}
-
-.projects-links-container {
-    width: 100%;
-}
-
-.projects-box {
-    flex-basis: 80%;
-}
-
-}
+/*-------------------------------------------------------BREAKPOINT 350px---------------------------------------------------------------*/
 
 @media screen and (max-width:350px) {
    
+/*----------------------------------------------------------GENERALES---------------------------------------------------------------*/
+
     h2 {
         font-size: 1.8rem;
     }
 
+/*----------------------------------------------------------CONTACTO---------------------------------------------------------------*/
+
     .rrss-link-description p{
         display: none;
-    }
-    
-    .rrss-container {
-        flex-direction: row;
-        justify-content: center;
     }
 
     .rrss-link-description {
@@ -761,5 +787,4 @@ h2 {
 }
 
 
- /*TO-DO: márgenes, prox breakpoint 600: acomodar rrss porque rebalsan los divs
- 550px: achicar letra de h1 y 2, mis proyectos pasa de dos columnas a una*/
+ /*TO-DO: revisar código, ordenar, chequear consistencia, márgenes*/
