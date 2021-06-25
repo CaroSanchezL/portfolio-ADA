@@ -53,7 +53,7 @@ h2 {
     align-items: center;
     position: fixed;
     background-color: #ffffff;
-    z-index: 1;
+    z-index: 2;
 }
 
 /*----------------------------------------------------LINKS-NAVEGACIÓN-SUPERIOR---------------------------------------------------------*/
@@ -140,7 +140,7 @@ h2 {
 /*---------------------------------------------------------MIS CONOCIMIENTOS------------------------------------------------------------*/
 .skills {
     background-color: #bfced91c;
-    margin-top: 0;
+    margin: 0;
     padding-bottom: 8rem;
     width: 100%;
 }
@@ -199,28 +199,59 @@ h2 {
 
 /*-----------------------------------------------------------------CITA-----------------------------------------------------------------*/
 .quote {
-    background-color: #1a6a62;
-    color: #ffffff;
+    /*background-color: #1a6a62;*/
+    /*color: #ffffff;*/
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 7rem 0;
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    padding-top: 3rem;
     box-sizing: border-box;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
+    height: 600px;
+    overflow: hidden;
 }
 
-.quote-img {
+.quote-background {
+    width: 105%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+/*.quote-img {
     width: 150px;
     height: 150px;
     border-radius: 150px;
+}*/
+
+.quote-img {
+    display: none;
+}
+
+.quote-box {
+    z-index: 1;
+    width: 50%;
+    height: 30%;
+    background-color: #1a6a62;    
+    color: #ffffff;
+    border-radius: 30px;
+    border: 3px #ffffff double;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px 10px;
 }
 
 .quote-text {
     font-size: 1.3rem;
     text-align: center;
-    margin: 4rem 21rem 5rem 21rem;
+    /*margin: 4rem 21rem 5rem 21rem;*/
     font-family: 'Space Mono', monospace;
+    z-index: 1;
 }
 
 .name-quote {
@@ -237,6 +268,11 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
+
+.projects-title {
+    padding-top: 8rem;
+}
+
 .projects-links-container {
     display: flex;
     flex-wrap:wrap;
@@ -244,8 +280,8 @@ h2 {
     margin-bottom: 2rem;
     width: 80%;
     font-size: 17px;
+    
 }
-
 
 .projects-box {
     display: flex;
@@ -521,9 +557,74 @@ footer {
 }
 
 /*-----------------------------------------------------------MEDIA QUERIES--------------------------------------------------------------*/
+@media screen and (max-width:1180px) {
+
+    .quote-background {
+        display: none;
+    }
+
+    .quote {
+        background-color: #1a6a62;
+        color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .quote-background {
+        display: none;
+    }
+    
+    .quote-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+    }
+    
+    .quote-box {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        border-radius: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        border: none;
+        box-shadow: none;        
+    }
+
+    .quote-img {
+        display: block;
+        margin-top: 4rem;
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+    }
+    
+    .quote-text {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 4rem 21rem 5rem 21rem;
+        font-family: 'Space Mono', monospace;
+        z-index: 1
+    }
+    
+    .name-quote {
+        font-style: normal;
+        font-family: 'BioRhyme', serif;
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 4rem;
+    }
+    
+}
+
 /*-------------------------------------------------------BREAKPOINT 1175px--------------------------------------------------------------*/
 
 @media screen and (max-width:1175px) {
+    
 
 /*------------------------------------------------------------NAV SUPERIOR--------------------------------------------------------------*/
     .top-nav {
@@ -755,10 +856,11 @@ footer {
 
     .projects-links-container {
         width: 100%;
+        justify-content: center;
     }
 
     .projects-box {
-        flex-basis: 80%;
+        flex-basis: 90%;
     }
 
 }
@@ -783,8 +885,26 @@ footer {
         margin: 0;
     }
 
-    
+    .rrss-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .icon-rrss:hover {
+        color: #ffffff;
+        background-color: #1a6a62
+    }
+
+    .a-rrss {
+        flex-direction: row;
+        align-self: flex-start;
+    }
+
+    .a-rrss span {
+        display: none;
+    }
+
 }
 
 
- /*TO-DO: revisar código, ordenar, chequear consistencia, márgenes*/
+ /*TO-DO: revisar código, ordenar, chequear consistencia, márgenes, corregir mis proyectos padding, unificar breakpoints 1175 y 1180, quitar hover y código comentado*/
