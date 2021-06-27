@@ -242,10 +242,6 @@ h2 {
     align-items: center;
 }
 
-.projects-title {
-    padding-top: 8rem;
-}
-
 .projects-links-container {
     display: flex;
     flex-wrap:wrap;
