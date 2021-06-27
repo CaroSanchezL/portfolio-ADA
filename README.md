@@ -23,7 +23,7 @@ The skills and projects sections are a work in progress, I'll be updating them a
 ![hecho con HTML5](https://img.shields.io/badge/hecho%20con-HTML5-orange)
 ![hecho con CSS3](https://img.shields.io/badge/hecho%20con-CSS3-blue)
 
-Esta es mi primera vez creando una página web. En este caso se trata de un proyecto que me fue asignado durante un Bootcamp de Frontend de Ada. Se nos indicó que debíamos seguir el diseño de este [modelo de portfolio](https://frontend-proyecto-portfolio.adaitw.org/) suministrado por Ada.
+Esta es mi primera vez creando una página web. En este caso se trata de un proyecto que me fue asignado durante un Bootcamp de Frontend de Ada. Se nos indicó que debíamos seguir el diseño de [este modelo de portfolio](https://frontend-proyecto-portfolio.adaitw.org/) suministrado por Ada.
 Las secciones de conocimientos y proyectos estarán en constante evolución. Las estaré actualizando a medida que aprenda, practique y cree durante el transcurso del bootcamp.
 
 [Echale un vistazo aquí](https://carosanchezl.github.io/portfolio-ada/)
