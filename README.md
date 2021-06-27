@@ -3,7 +3,7 @@
 <a name="english_version"></a>
 # Project: Portfolio
 ### English
-[Ir a versión en Castellano](#spanish_version)
+[Ir a versión en Español](#spanish_version)
 
 ![made with HTML5](https://img.shields.io/badge/made%20with-HTML5-orange)
 ![made with CSS3](https://img.shields.io/badge/made%20with-CSS3-blue)
@@ -17,7 +17,7 @@ The skills and projects sections are a work in progress, I'll be updating them a
 
 <a name="spanish_version"></a>
 # Proyecto: Portfolio
-### Castellano
+### Español
 [Go to English Version](#english_version)
 
 ![hecho con HTML5](https://img.shields.io/badge/hecho%20con-HTML5-orange)
