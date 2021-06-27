@@ -302,7 +302,6 @@ h2 {
 
 .contact-container {
     display: flex;
-    justify-content: center;
     width: 75%;
     margin: 4em;
     background-color: #ffffff;
@@ -348,7 +347,6 @@ h2 {
     width: auto;
     display: flex;
     align-items: baseline;
-    justify-content: left;
     margin-left: 1rem;
     font-size: 1.1rem;
 }
@@ -464,7 +462,6 @@ footer {
 .footer-ul {
     list-style-type:none;
     display: flex;
-    justify-content: center;
     align-items: baseline;
     justify-content: center;
     padding: 0;
@@ -651,7 +648,6 @@ footer {
 
     .rrss-container {
         margin: 0;
-        justify-content: left;
         flex-wrap: wrap;
         align-items: space-around;
         flex-direction: row;
@@ -660,7 +656,6 @@ footer {
     }
 
     .rrss-link-description {
-        align-items: left;
         width: 45%;
     }
 
