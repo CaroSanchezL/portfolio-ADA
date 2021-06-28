@@ -8,8 +8,8 @@
 ![made with HTML5](https://img.shields.io/badge/made%20with-HTML5-orange)
 ![made with CSS3](https://img.shields.io/badge/made%20with-CSS3-blue)
 
-This is my first time creating a webpage. In this case it's a project I was assigned during a Frontend Bootcamp by ADA Itw. The instruction was to follow the design of [this example portfolio](https://frontend-proyecto-portfolio.adaitw.org/) provided by ADA.
-The sections related to skills and projects are a work in progress, I'll be updating them as I learn, practice and create throughout the bootcamp.
+This is my first time creating a webpage. In this case, it's a project I was assigned during a Frontend Bootcamp by ADA Itw. The instruction was to follow the design of [this example portfolio](https://frontend-proyecto-portfolio.adaitw.org/) provided by ADA.
+The sections related to skills and projects are a work in progress. I'll be updating them as I learn, practice, and create throughout the Bootcamp.
 
 [Check it out here](https://carosanchezl.github.io/portfolio-ada/)
 
