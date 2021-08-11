@@ -5,6 +5,7 @@ body {
 }
 
 main {
+    /* las tres primeras ordenes son innecesarias, es el estilo por defecto de los divs */
     margin: 0;
     padding: 0;
     width: 100%;
@@ -14,13 +15,16 @@ main {
 }
 
 section {
+    /* innecesario, los divs ya ocupan el 100% de su contenedor */
     width: 100%;
+    /* esta orden no hace nada si no esta acompañada de display flex */
     align-self: center;
     padding-top: 4rem;
 }
 
 a {
     text-decoration: none;
+    /* asi: padding: 0.8rem;  */
     padding: 0.8rem 0.8rem;
     border-radius: 50px;
 }
@@ -102,8 +106,13 @@ h2 {
 .presentation {
     display: flex;
     justify-content:center;
+    /* no le des height fijos a tus contenedores: deja que el height este dado por el contenido
+    En primer lugar, porque si agregaras texto a esta seccion, la rebalsaria en lugar de acomodarse
+    En segundo lugar porque dificulta implementar el responsive. 
+    La excepcion a esto es elementos pequeños como tarjetas o botones */
     height:650px;
     padding: 4rem 0 0 0;
+    /* innecesario el width 100% */
     width: 100%
 }
 
@@ -134,6 +143,8 @@ h2 {
 
 /*---------------------------------------------------------IMAGEN PRESENTACIÓN---------------------------------------------------------*/
 .presentation-img {
+    /* no le des tamaños fijos a las imagenes: pueden romper su relación de aspecto
+    dale tamaño al div que la contiene y a la imagen dale width de 100% */
     width: 600px;
     height: 600px;
     margin: 0 1rem;
@@ -144,6 +155,7 @@ h2 {
     background-color: #bfced91c;
     margin-top: 0;
     padding-bottom: 8rem;
+    /* innecesario */
     width: 100%;
 }
 
@@ -161,6 +173,7 @@ h2 {
 .skills-logos {
     display: flex;
     flex-wrap: wrap;
+    /* innecesario */
     width: 100%;
     max-width: 62rem;
     margin: auto;
@@ -211,6 +224,7 @@ h2 {
     padding: 7rem 0;
     box-sizing: border-box;
     justify-content: center;
+    /* innecesario */
     width: 100%;
 }
 
@@ -334,6 +348,7 @@ h2 {
 .rrss-container {
     display: flex;
     flex-direction: column;
+    /* innecesario */
     align-items: baseline;
     margin-top: 2rem;
     list-style-type: none;
@@ -378,6 +393,7 @@ h2 {
 .contact-right-bar {
     width: 50%;
     display: flex;
+    /* innecesario, row se pone por defecto */
     flex-direction: row;
     margin-left: 1.5rem;
 }
@@ -450,6 +466,7 @@ footer {
 
 /*------------------------------------------------------------NAV INFERIOR--------------------------------------------------------------*/
 .footer-nav {
+    /* este estilo no se esta aplicando porque en el html escribiste "<nav classs="footer-nav">" */
     height: fit-content;
     box-sizing: border-box;
 }
